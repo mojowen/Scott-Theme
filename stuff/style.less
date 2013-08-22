@@ -139,6 +139,7 @@ a, a:link, a:visited, a:active {
 					.transition( 1s );
 					.transition-property('width,height,margin');
 					.hide-backface;
+					z-index: 0;
 				}
 
 				.thumbnail, .inside {
@@ -151,6 +152,7 @@ a, a:link, a:visited, a:active {
 				}
 				.thumbnail {
 					.drop-shadow(1px,1px,2px,90%);
+					z-index: 10;
 					h1 { display: none; .bitter-font; color: #333; margin-top: @project_size - 1em; font-size: 17px;}
 					background-color: #999;
 					background-size: cover;
