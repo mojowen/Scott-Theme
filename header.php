@@ -33,7 +33,7 @@
   <div id="page" >
 
     <header id="menu">
-        <h1><a href="/">Scott Riker Duncombe</a> :: <span id="title"><?php echo srd_title(false); ?></span></h1> <!-- should change depending on the subpage -->
+        <h1><a href="/"><?php echo get_bloginfo('title'); ?></a> :: <span id="title"><?php echo srd_title(false); ?></span></h1> <!-- should change depending on the subpage -->
     </header>
     <sidebar id="side">
         <a id="photo" href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/me.jpg"></a>
