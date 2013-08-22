@@ -11,6 +11,7 @@ Projects are pretty cool they:
  * Be displayed on the front page and will use CSS animation for hover / opening effects
  * Will rewrite the url using `history.pushState` so the open browser is at the projet's current url. Will rewrite it back to `/` when the project is closed.
  * Any `/project/` links will open using the homepage's HTML and will 'open' to that project. Homepage will work as normal.
+ * If Google Analytics is active - will count these as page views. If Google Analytics isn't there - will just fail silently.
 
 Check out `functions.php` and `/stuff/site.js` for more details.
 
