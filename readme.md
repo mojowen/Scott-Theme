@@ -23,4 +23,4 @@ All of this is in `/stuff/site.js`
 
 ### Styles
 
-Styles are all stored in LESS, uses javascript compilation by default but will switch to Style.css if you change config.json. You'll need to compile your LESS styles into CSS first.
+Styles are all stored in LESS, uses javascript compilation by default but will switch to `style.css` if you change config.json. You'll need to compile your LESS styles into CSS first.
