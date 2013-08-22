@@ -1,6 +1,6 @@
 ## Scott's Website Theme
 
-It's pretty simple stuff - under 1,000 lines of code. [See it in action](http://scottduncombe.com)
+It's pretty simple stuff - under 1,000 lines of original code. [See it in action](http://scottduncombe.com)
 
 ### Project Management
 
@@ -26,3 +26,5 @@ All of this is in `/stuff/site.js`
 Styles are all stored in LESS, uses javascript compilation by default but will switch to `style.css` if you change config.json. You'll need to compile your LESS styles into CSS first.
 
 Color changes are really easy - just change the colors in `stuff/vars.less`.
+
+Also uses a few LESS libraries like [960 LESS](https://github.com/DavidTurner/960-LESS) and [LESS Elements](http://lesselements.com).
