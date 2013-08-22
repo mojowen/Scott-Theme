@@ -1,4 +1,4 @@
-## Scott's Website Them
+## Scott's Website Theme
 
 It's pretty simple stuff - under 1,000 lines of code. [See it in action](http://scottduncombe.com)
 
