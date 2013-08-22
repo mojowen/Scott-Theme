@@ -502,6 +502,12 @@ a:active {
   line-height: 19px;
   text-align: left;
 }
+#content.not_front .inner a {
+  font-weight: bold;
+}
+#content.not_front .inner a:hover {
+  text-decoration: underline;
+}
 #content.fourohfour h1 {
   font-family: 'Bitter', serif;
   letter-spacing: 0px;
