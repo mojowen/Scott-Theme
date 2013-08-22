@@ -36,28 +36,21 @@
     	<h1><a href="/">Scott Riker Duncombe</a> :: <span id="title"><?php echo srd_title(false); ?></span></h1> <!-- should change depending on the subpage -->
     </header>
     <sidebar id="side">
-        <a id="photo" href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/me.jpeg"></a>
+        <a id="photo" href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/me.jpg"></a>
     	<h4 id="description"><?php echo get_bloginfo('description'); ?></h4>
-    	<a id="about" href="/about">What does that mean?</a>
         <a id="projects_link" href="/">Here's some cool stuff I've built</a>
     	<div id="social">
-    		<a href="https://github.com/mojowen" target='_blank'>github</a>
-            <a href="http://sduncombe.tumblr.com/" target='_blank'>blog</a>
-    		<a href="/resume" target='_blank'>resume</a>
-    		<a href="https://facebook.com/srduncombe" target='_blank'>fb</a>
-    		<a href="https://twitter.com/sduncombe" target='_blank'>tw</a>
-    		<a href="https://www.linkedin.com/in/scottduncombe/" target='_blank'>ln</a>
-    	</div>
-    	<div id="ask">
-			<h5>Want to Build Something</h5>
-			<a href="/contact"><h4>Awesome</h4></a>
-			<h5>Together?</h5>
-    		</h5>
+    		<a href="https://github.com/" target='_blank'>github</a>
+            <a href="http://tumblr.com/" target='_blank'>blog</a>
+    		<!-- <a href="/" target='_blank'>resume</a> -->
+    		<a href="https://facebook.com/" target='_blank'>fb</a>
+    		<a href="https://twitter.com/" target='_blank'>tw</a>
+    		<a href="https://www.linkedin.com/in//" target='_blank'>ln</a>
     	</div>
     	<div id="peeps">
     		<h5>Some of the cats I work with<br/>to make amazing things:</h5>
-            <a href="http://mollieruskin.com/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/mollie.png"><br/>Mollie Ruskin,<br/>Washington DC</div></a>
-            <a href="http://noahmanger.com/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/noah.jpeg"><br/>Noah Manger,<br/>Portland OR</div></a>
-            <a href="http://cargocollective.com/bryanchiem/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/bryan.JPG"><br/>Bryan Chiêm,<br/>California</div></a>
+            <a href="/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/friend_1.jpg"><br/>One Friend,<br/>Friend's Place</div></a>
+            <a href="/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/friend_2.jpg"><br/>Two Friend,<br/>Friend's Place</div></a>
+            <a href="/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/friend_3.jpg"><br/>Three Friend,<br/>Friend's Place</div></a>
     	</div>
     </sidebar>
