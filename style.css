@@ -201,6 +201,7 @@ a:active {
 }
 #page #side #peeps div img {
   width: 100%;
+  height: 46px;
   border-radius: 50px;
 }
 #page #side #peeps div,
@@ -223,6 +224,9 @@ a:active {
 #page #side #peeps div:hover {
   width: 68px;
   height: 120px;
+}
+#page #side #peeps div:hover img {
+  height: auto;
 }
 #page #content {
   min-height: 400px;
