@@ -26,7 +26,7 @@ EOF;
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 function my_scripts_method() {
     if( !is_admin() ) wp_deregister_script('jquery');
-    wp_enqueue_script( 'scott_script', get_stylesheet_directory_uri() . '/stuff/scott.js',  null, '1', true );
+    wp_enqueue_script( 'scott_script', get_stylesheet_directory_uri() . '/stuff/site.js',  null, '1', true );
 }
 
 $silent_post = null;
