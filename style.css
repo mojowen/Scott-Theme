@@ -201,7 +201,6 @@ a:active {
 }
 #page #side #peeps div img {
   width: 100%;
-  height: 46px;
   border-radius: 50px;
 }
 #page #side #peeps div,
@@ -224,9 +223,6 @@ a:active {
 #page #side #peeps div:hover {
   width: 68px;
   height: 120px;
-}
-#page #side #peeps div:hover img {
-  height: auto;
 }
 #page #content {
   min-height: 400px;
@@ -272,6 +268,7 @@ a:active {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
+  z-index: 0;
 }
 #page #content .container .project .thumbnail,
 #page #content .container .project .inside {
@@ -286,6 +283,7 @@ a:active {
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  z-index: 10;
   background-color: #999;
   background-size: cover;
   background-position: top left;
@@ -505,6 +503,12 @@ a:active {
   font-size: 12px;
   line-height: 19px;
   text-align: left;
+}
+#content.not_front .inner a {
+  font-weight: bold;
+}
+#content.not_front .inner a:hover {
+  text-decoration: underline;
 }
 #content.fourohfour h1 {
   font-family: 'Bitter', serif;
