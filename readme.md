@@ -1,6 +1,8 @@
 ## Scott's Website Theme
 
-It's pretty simple stuff - under 1,000 lines of original code. [See it in action](http://scottduncombe.com)
+It's pretty simple stuff - under 1,000 lines of original code. [See it in action](http://scottduncombe.com).
+
+To install it - just move this folder to the `wp-content/themes` folder inside of WordPress. Then visit [http://your-wordpress-site.co.biz/wp-admin/themes.php](http://your-wordpress-site.co.biz/wp-admin/themes.php) and select this theme. You'll probably also want to edit header.php and add some of your own files for photos and what not.
 
 ### Project Management
 
