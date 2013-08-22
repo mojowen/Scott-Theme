@@ -1,5 +1,5 @@
 	<footer id="footie">
-		Copyright Scott Duncombe Web Design and all that - All rights reserved. <a href="https://github.com/mojowen/Scott-Theme">Fork this code</a>. Proudly powered by <a target="_blank" href="http://wordpress.org">WordPress</a> and hosted by <a target="_blank" href="http://www.webfaction.com/?affiliate=mojowen">WebFaction</a>.
+		Copyright Scott Duncombe Web Design and all that - All rights reserved. <a href="https://github.com/mojowen/Scott-Theme">Fork this code</a>. Proudly powered by <a target="_blank" href="http://wordpress.org">WordPress</a>.
 		<?php wp_footer(); ?>
 	</footer>
 	<script type="text/javascript">
