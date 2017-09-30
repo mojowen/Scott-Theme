@@ -1,0 +1,57 @@
+@media only screen and (max-width : 1380px) {
+	#page {
+		#side { right: 5%;}
+	}
+}
+@media only screen and (max-width : 900px ) {
+	#page {
+		#side {
+			min-width: 410px;
+			position: relative;
+			padding: 20px 0;
+			#photo, #description, #about, #ask, #projects_link { padding: 4px; width: 48%; margin: 0;  }
+			#photo, #ask, #social, #peeps { float: left; }
+			#about, #description, #projects_link { float: right; text-align: left;}
+			#photo img { width: 50%; min-width: 104px; }
+			#social, #ask { clear: both;}
+			#social { margin: 0 0 20px; width: 48%;}
+			height: 300px;
+			right: inherit;
+		}
+		#menu, #content, #side, #content .inner { width: 530px; margin: 4px auto; display: block; float: none;}
+		#content .inner { width: 450px;}
+		#content {
+			padding: 0;
+			.container .project .thumbnail h1 { display: block;}
+		}
+	}
+}
+@media only screen and (max-width : 560px ) {
+	#page {
+		#side {
+			min-width: inherit;
+			position: relative;
+			text-align: center;
+			#photo, #description, #about, #ask, #projects_link, #social { width: 80%; margin: 10px auto; text-align: center; float: none; display: block;}
+			#projects_link, #peeps { display: none;}
+			#ask { margin: 30px auto;}
+			height: 350px;
+			padding-bottom: 80px;
+		}
+		#menu h1 { font-size: 1.7em;}
+		#content {
+			.grid(16,19);
+			text-align: center;
+			margin: 4px auto;
+			.container { float: none;  margin: 0px auto 80px;}
+		}
+		#menu, #content, #side { width: 100%;}
+		#content .inner { width: auto;}
+		.gallery {
+			.gallery-showcase { display: none;}
+			.gallery-item { width: 90%;}
+			margin: 20px auto;
+			width: 90%;
+		}
+	}
+}
