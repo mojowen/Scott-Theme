@@ -8,9 +8,9 @@ window.onload = function() {
 			ignore_popstate = false;
 
 		function close() {
-            var nextSib = openThumbnail.parentElement.nextElementSibling
-            nextSib.style.zIndex = -1
-            setTimeout(function() { nextSib.style.zIndex = null; }, 1010)
+                        var nextSib = openThumbnail.parentElement.nextElementSibling
+                        nextSib.style.zIndex = -1
+                        setTimeout(function() { nextSib.style.zIndex = null; }, 1010)
 
 			openThumbnail.style.margin = '0';
 			openThumbnail.style.width = null;
@@ -165,7 +165,7 @@ window.onload = function() {
 				img.onclick = function() { try{ ga('send', 'event', 'open '+img.src, 'clicked'); } catch(e) { }; window.open(img.src); }
 				galleryImage.className += ' active';
 
-                var galleryCaption = galleryItem.querySelector('.gallery-caption')
+                                var galleryCaption = galleryItem.querySelector('.gallery-caption')
 				heading.textContent = galleryCaption.textContent;
 
 				if( considerMobile() && isEvent ) { try{ ga('send', 'event', 'open '+img.src, 'clicked'); } catch(e) { }; window.open(img.src);  }
