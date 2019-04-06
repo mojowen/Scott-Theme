@@ -10,7 +10,11 @@ window.onload = function() {
 		function close() {
                         var nextSib = openThumbnail.parentElement.nextElementSibling
                         nextSib.style.zIndex = -1
-                        setTimeout(function() { nextSib.style.zIndex = null; }, 1010)
+                        setTimeout(function() {
+				if( !nextSib.children[0].className.match(/open/) ) {
+					nextSib.style.zIndex = null;
+				}
+			}, 1010)
 
 			openThumbnail.style.margin = '0';
 			openThumbnail.style.width = null;
