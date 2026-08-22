@@ -1,0 +1,42 @@
+name: Deploy theme to scottduncombe.com
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'style.css'
+      - 'functions.php'
+      - 'header.php'
+      - 'footer.php'
+      - 'index.php'
+      - 'home.php'
+      - '404.php'
+      - 'single-project.php'
+      - 'page-blog.php'
+      - 'page-press.php'
+      - 'stuff/**'
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: false
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload theme via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}          # e.g. ftp.scottduncombe.com
+          username: ${{ secrets.FTP_USERNAME }}      # cPanel FTP user
+          password: ${{ secrets.FTP_PASSWORD }}
+          server_dir: /public_html/wp-content/themes/scott/
+          exclude: |
+            **/.git*
+            **/.github*
+            scripts/**
+            projects/**
+            readme.md
