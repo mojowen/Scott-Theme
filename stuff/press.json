@@ -1,1 +1,100 @@
-[]
+[
+	{
+		"title": "Feel Inspired, America",
+		"outlet": "The New York Times",
+		"url": "https://www.nytimes.com/2020/11/03/opinion/volunteers-election-2020.html",
+		"date": "2020-11-03",
+		"quote": "NYT Opinion on the volunteerism powering 2020's election — includes the Pizza to the Polls origin story, from seeing Cleveland voters in long lines to the first food order."
+	},
+	{
+		"title": "Pizza To The Polls Founder Scott Duncombe on Morning MAGIC",
+		"outlet": "Audacy — Morning MAGIC Boston (with Sue and Kendra)",
+		"url": "https://www.audacy.com/magic1067/latest/pizza-to-the-polls-founder-scott-duncombe-on-morning-magic",
+		"date": "2024-11-05",
+		"quote": "Election Day interview on Boston radio."
+	},
+	{
+		"title": "Free Food for Participating in Civic Life with Scott Duncombe of Pizza to the Polls",
+		"outlet": "The Great Battlefield Podcast",
+		"url": "https://soundcloud.com/thegreatbattlefield/free-food-for-participating-in-civic-life-with-scott-duncombe-of-pizza-to-the-polls",
+		"date": "",
+		"quote": "Long-form interview on a career in politics and tech, and co-founding Pizza to the Polls."
+	},
+	{
+		"title": "A nonprofit raised over $1.4 million to deliver 66,000 free pizzas to hungry voters waiting in long election lines",
+		"outlet": "Business Insider",
+		"url": "https://www.businessinsider.com/pizza-to-the-polls-delivers-pizza-to-voters-2020-11",
+		"date": "2020-11-04",
+		"quote": "$1.46 million raised, over 66,000 pizzas, 3,263 polling places in 48 states."
+	},
+	{
+		"title": "Pizza to the Polls is using free slices to motivate voters to stay in line",
+		"outlet": "TODAY.com",
+		"url": "https://www.today.com/tmak/real-life/live-updates/pizza-polls-voting-lines-free-food-rcna126307",
+		"date": "2020-10-30",
+		"quote": ""
+	},
+	{
+		"title": "What Is 'Pizza to the Polls'? Scott Duncombe Discusses His Non-Profit",
+		"outlet": "Thrillist",
+		"url": "https://www.thrillist.com/eat/nation/pizza-to-the-polls-nonprofit-scott-duncombe-interview",
+		"date": "2020-10-27",
+		"quote": "A profile and interview centered on Scott and the organization."
+	},
+	{
+		"title": "Pizza to the Polls: A Small Slice of Making Long Voting Lines Better",
+		"outlet": "KCRW — Good Food",
+		"url": "https://www.kcrw.com/shows/good-food/stories/scott-duncombe-pizza-polls",
+		"date": "2020-10-23",
+		"quote": "Radio interview covering delivery logistics across 47 states. (Link unverified from this network — KCRW rate-limits bots.)"
+	},
+	{
+		"title": "Poll worker recruitment picks up as officials prepare for in-person voting",
+		"outlet": "CNN",
+		"url": "https://edition.cnn.com/2020/09/26/politics/2020-election-poll-worker-recruitment-voting/index.html",
+		"date": "2020-09-26",
+		"quote": "Quoted as Power the Polls co-director on recruiting 500,000 applicants."
+	},
+	{
+		"title": "Wanted: Young People To Work The Polls This November",
+		"outlet": "NPR",
+		"url": "https://www.npr.org/2020/08/05/894331965/wanted-young-people-to-work-the-polls-this-november",
+		"date": "2020-08-05",
+		"quote": "On Power the Polls' cross-partisan coalition and its 250,000-recruitment goal."
+	},
+	{
+		"title": "Scott Duncombe",
+		"outlet": "Worth",
+		"url": "https://worth.com/person/scott-duncombe/",
+		"date": "2024-01-07",
+		"quote": ""
+	},
+	{
+		"title": "Pizza to the Polls with Scott Duncombe",
+		"outlet": "ELGL — GovLove Podcast",
+		"url": "https://elgl.org/podcast-pizza-to-the-polls-with-scott-duncombe/",
+		"date": "2018-12-18",
+		"quote": "Founding story, crowdsourced reports, and civic tech infrastructure."
+	},
+	{
+		"title": "Long Line To Vote? A Pizza Delivery Service Will Send A Pie To Crowded Polling Places",
+		"outlet": "NPR",
+		"url": "https://www.npr.org/2018/10/25/660436884/long-line-to-vote-a-pizza-delivery-service-will-send-a-pie-to-crowded-polling-pl",
+		"date": "2018-10-25",
+		"quote": "Early national coverage establishing Pizza to the Polls as a civic-engagement idea."
+	},
+	{
+		"title": "Portland Election Heroes Are Sending Pizza To People Waiting in Poll Lines Across America",
+		"outlet": "Willamette Week",
+		"url": "https://www.wweek.com/news/2016/11/07/portland-political-organizers-are-sending-pizza-to-people-waiting-in-poll-lines-across-america/",
+		"date": "2016-11-07",
+		"quote": "Founding-era hometown coverage — identifies Scott as the PAC's treasurer."
+	},
+	{
+		"title": "Pizza to the Polls Will Feed Thousands of Voters Stuck in Long Lines on Election Day",
+		"outlet": "Eater",
+		"url": "https://www.eater.com/2016/11/7/13552938/pizza-to-the-polls-delivery-feed-voters",
+		"date": "2016-11-07",
+		"quote": ""
+	}
+]
