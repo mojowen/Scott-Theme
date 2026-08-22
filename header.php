@@ -39,11 +39,11 @@
         <a id="photo" href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/me.jpg"></a>
         <h4 id="description"><?php echo get_bloginfo('description'); ?></h4>
         <a id="projects_link" href="/">Here's some cool stuff I've built</a>
+        <a id="blog_link" href="/blog">Writing</a>
+        <a id="press_link" href="/press">Press</a>
         <div id="social">
             <a href="https://github.com/" target='_blank'>github</a>
-            <a href="http://tumblr.com/" target='_blank'>blog</a>
             <!-- <a href="/" target='_blank'>resume</a> -->
-            <a href="https://facebook.com/" target='_blank'>fb</a>
             <a href="https://twitter.com/" target='_blank'>tw</a>
             <a href="https://www.linkedin.com/in//" target='_blank'>ln</a>
         </div>

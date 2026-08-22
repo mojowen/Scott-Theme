@@ -14,7 +14,7 @@ window.onload = function() {
 				if( !nextSib.children[0].className.match(/open/) ) {
 					nextSib.style.zIndex = null;
 				}
-			}, 1010)
+			}, 450)
 
 			openThumbnail.style.margin = '0';
 			openThumbnail.style.width = null;
@@ -74,7 +74,7 @@ window.onload = function() {
 		function openAndIgnore(thumbnail) {
 			ignore_popstate = true;
 			open( thumbnail );
-			setTimeout(function(){ ignore_popstate = false;},1000);
+			setTimeout(function(){ ignore_popstate = false;},450);
 		}
 		function closeAndOpen(thumbnail) {
 			if( openThumbnail !== null ) {

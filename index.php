@@ -19,6 +19,9 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="inner">
+					<?php if ( get_post_type() === 'post' ) : ?>
+						<div class="post-meta"><?php echo get_the_date(); ?></div>
+					<?php endif; ?>
 					<?php the_content(); ?>
 				</div>
 			<?php endwhile; ?>

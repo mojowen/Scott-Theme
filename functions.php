@@ -1,25 +1,10 @@
 <?php
 
-function load_config() {
-    return json_decode( file_get_contents(get_stylesheet_directory_uri().'/config.json') );
-}
-
-// Adding style
-add_action('wp_head', 'scott_dev_style');
-
-function scott_dev_style() {
-    $config = load_config();
-    $dev = $config->dev;
-	$theme = get_stylesheet_directory_uri();
-    $less_style = <<<EOF
-    <link rel="stylesheet/less" type="text/css" href="{$theme}/stuff/style.less" />
-    <script src="{$theme}/stuff/less.js" type="text/javascript"></script>
-EOF;
-	$css_style = <<<EOF
-	<link rel="stylesheet" type="text/css" media="all" href="{$theme}/style.css" />
-EOF;
-    if( $dev ) echo $less_style;
-    else echo $css_style;
+// Styles: plain CSS + Bitter from Google Fonts
+add_action( 'wp_enqueue_scripts', 'scott_styles' );
+function scott_styles() {
+    wp_enqueue_style( 'scott-bitter', 'https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&display=swap', array(), null );
+    wp_enqueue_style( 'scott-style', get_stylesheet_uri(), array( 'scott-bitter' ) );
 }
 
 // Adding script
@@ -64,7 +49,7 @@ function srd_thumbnail() {
     if( is_project_page() && !is_home()  ) {
         $actual = get_actual_project();
         return the_post_thumbnail_src( $actual->ID);
-    } else return get_stylesheet_directory_uri()."/stuff/me.jpeg";
+    } else return get_stylesheet_directory_uri()."/stuff/me.jpg";
 }
 function srd_url() {
     if( is_project_page()  && !is_home() ) {
@@ -184,7 +169,6 @@ function open_graph_crap() {
     <meta property='og:description' content="$description"/>
     <meta property='og:url' content='http://scottduncombe.com/$link'/>
     <meta property='og:site_name' content="Scott Riker Duncombe Web Design"/>
-    <meta property='article:publisher' content='http://facebook.com/srduncombe'/>
     <meta property='og:image' content='$thumbnail'/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@sduncombe"/>

@@ -1,33 +1,47 @@
-## Scott's Website Theme
+# Scott's Website Theme
 
-It's pretty simple stuff - under 1,000 lines of original code. [See it in action](http://scottduncombe.com).
+[See it in action](https://scottduncombe.com).
 
-To install it - just move this folder to the `wp-content/themes` folder inside of WordPress. Then visit [http://your-wordpress-site.co.biz/wp-admin/themes.php](http://your-wordpress-site.co.biz/wp-admin/themes.php) and select this theme. You'll probably also want to edit header.php and add some of your own files for photos and what not.
+To install it — move this folder to `wp-content/themes` inside WordPress, then select it under Appearance → Themes.
 
-### Project Management
+## Styles
 
-Uses a custom content type (`Projects`) to track projects. Projects should have a thumbnail and can contain galleries and other stuff like youtube videos.
+Plain modern CSS in `style.css` — no preprocessors, no build step. Colors and
+timing are CSS variables at the top of the file (`--main`, `--muted`, `--ease`, etc.).
 
-Projects are pretty cool they:
+Fonts: [Bitter](https://fonts.google.com/specimen/Bitter) loaded from Google Fonts via `functions.php`.
 
- * Be displayed on the front page and will use CSS animation for hover / opening effects
- * Will rewrite the url using `history.pushState` so the open browser is at the projet's current url. Will rewrite it back to `/` when the project is closed.
- * Any `/project/` links will open using the homepage's HTML and will 'open' to that project. Homepage will work as normal.
- * If Google Analytics is active - will count these as page views. If Google Analytics isn't there - will just fail silently.
+## Projects
 
-Check out `functions.php` and `/stuff/site.js` for more details.
+Uses a custom content type (`Projects`) to track projects. Projects should have a
+thumbnail and can contain galleries and other stuff like YouTube videos.
 
-### Better Galleries
+Projects:
 
-I think the default galleries kind of suck - so on project page it rewrites them so there's a main image and clicking the thumbnails replace the main image. On small screens this doens't work as well - so it will just display larger thumbnails and clicking on them just opens the image in a new tab.
+ * Are displayed on the front page. Hovering lifts the tile and fades in a title
+   overlay; clicking smoothly expands the card in place.
+ * Rewrite the URL using `history.pushState` so the open project has its own URL,
+   and rewrite back to `/` when closed.
+ * Any `/project/` links open using the homepage's HTML and 'open' to that project.
+ * Count as Google Analytics pageviews if GA is active; fails silently otherwise.
 
-All of this is in `/stuff/site.js`
+## Press
 
+Press clippings live in `stuff/press.json`. Rendered by the **Press** page template
+(`page-press.php`) — create a page with slug `press` and choose the "Press" template.
 
-### Styles
+Manage clippings with `scripts/collect_press.py`:
 
-Styles are all stored in LESS, uses javascript compilation by default but will switch to `style.css` if you change config.json. You'll need to compile your LESS styles into CSS first.
+    scripts/collect_press.py add https://example.com/some-article
+    scripts/collect_press.py add <url> --quote "Nice quote." --date 2025-03-01
+    scripts/collect_press.py list
+    scripts/collect_press.py remove <index-or-url>
 
-Color changes are really easy - just change the colors in `stuff/vars.less`.
+`add` scrapes the page's `og:title` / `<title>` and `og:site_name` automatically;
+flags override what was scraped. Entries are kept sorted newest-first.
 
-Also uses a few LESS libraries like [960 LESS](https://github.com/DavidTurner/960-LESS) and [LESS Elements](http://lesselements.com).
+## Blog
+
+The **Blog** page template (`page-blog.php`) lists recent posts — create a page
+with slug `blog` and choose the "Blog" template. Write posts as normal WordPress
+posts; single posts render through `index.php`.
