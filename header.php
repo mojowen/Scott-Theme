@@ -38,7 +38,7 @@
         <h1><a href="/"><?php echo get_bloginfo('title'); ?></a> :: <span id="title"><?php echo srd_title(false); ?></span></h1> <!-- should change depending on the subpage -->
     </header>
     <sidebar id="side">
-        <a id="photo" href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/me.jpg"></a>
+        <a id="photo" href="/about"><img src="<?php echo esc_url( get_theme_mod( 'scott_profile_photo', get_stylesheet_directory_uri() . '/stuff/me.jpg' ) ); ?>"></a>
         <h4 id="description"><?php echo get_bloginfo('description'); ?></h4>
         <a id="projects_link" href="/">Here's some cool stuff I've built</a>
         <a id="blog_link" href="/blog">Writing</a>

@@ -5,9 +5,20 @@
 add_action( 'customize_register', 'scott_customize_register' );
 function scott_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'scott_social', array(
-        'title'    => __( 'Social Links' ),
+        'title'    => __( 'Social Links & Sidebar' ),
         'priority' => 30,
     ) );
+
+    // Sidebar photo — stored in DB so deploys never overwrite it
+    $wp_customize->add_setting( 'scott_profile_photo', array(
+        'default'           => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'scott_profile_photo', array(
+        'label'       => __( 'Sidebar Photo' ),
+        'description' => __( 'Shown in the round frame above your tagline. Leave unset to use the theme default.' ),
+        'section'     => 'scott_social',
+    ) ) );
 
     $socials = array(
         'github'   => array( 'label' => 'GitHub URL',   'default' => '' ),
