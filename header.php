@@ -48,10 +48,4 @@
                 <a href="<?php echo esc_url( $link['url'] ); ?>" target="_blank" rel="noopener"><?php echo esc_html( $link['label'] ); ?></a>
             <?php endforeach; ?>
         </div>
-        <div id="peeps">
-            <h5>Some of the cats I work with<br/>to make amazing things:</h5>
-            <a href="/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/friend_1.jpg"><br/>One Friend,<br/>Friend's Place</div></a>
-            <a href="/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/friend_2.jpg"><br/>Two Friend,<br/>Friend's Place</div></a>
-            <a href="/" target="_blank"><div><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/friend_3.jpg"><br/>Three Friend,<br/>Friend's Place</div></a>
-        </div>
     </sidebar>
