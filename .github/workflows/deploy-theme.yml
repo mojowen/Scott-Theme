@@ -33,7 +33,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}          # e.g. ftp.scottduncombe.com
           username: ${{ secrets.FTP_USERNAME }}      # cPanel FTP user
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/wp-content/themes/scott/
           exclude: |
             **/.git*
             **/.github*
