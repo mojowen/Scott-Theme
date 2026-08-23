@@ -41,8 +41,6 @@
         <a id="photo" href="/about"><img src="<?php echo esc_url( get_theme_mod( 'scott_profile_photo', get_stylesheet_directory_uri() . '/stuff/me.jpg' ) ); ?>"></a>
         <h4 id="description"><?php echo get_bloginfo('description'); ?></h4>
         <a id="projects_link" href="/">Here's some cool stuff I've built</a>
-        <a id="blog_link" href="/blog">Writing</a>
-        <a id="press_link" href="/press">Press</a>
         <div id="social">
             <?php foreach ( scott_social_links() as $link ) : ?>
                 <a href="<?php echo esc_url( $link['url'] ); ?>" target="_blank" rel="noopener"><?php echo esc_html( $link['label'] ); ?></a>
