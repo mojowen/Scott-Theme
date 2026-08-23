@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Option C: Transparent background, bold geometric monogram -->
+  <g fill="none" stroke="#580035" stroke-width="34">
+    <!-- S built from two arcs -->
+    <path d="M 196 148 A 74 74 0 1 0 122 222 L 190 290 A 74 74 0 1 1 116 364"
+          stroke-linecap="round"/>
+    <!-- D -->
+    <path d="M 300 110 L 300 402 L 340 402 A 146 146 0 0 0 340 110 Z" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Option B: Circle, modern lowercase wordmark -->
+  <circle cx="256" cy="256" r="256" fill="#580035"/>
+  <text x="240" y="268" text-anchor="middle" dominant-baseline="central"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="300"
+        font-size="210" fill="#fdfafc">sd</text>
+  <circle cx="388" cy="330" r="22" fill="#fdfafc"/>
+</svg>

@@ -23,7 +23,9 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
     <title><?php echo srd_title(); ?></title>
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/stuff/icon.ico" />
+    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/stuff/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/stuff/favicons/favicon-32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/stuff/favicons/favicon-180.png">
   <?php wp_head(); ?>
   <?php open_graph_crap(); ?>
 </head>
@@ -39,13 +41,12 @@
         <a id="photo" href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/stuff/me.jpg"></a>
         <h4 id="description"><?php echo get_bloginfo('description'); ?></h4>
         <a id="projects_link" href="/">Here's some cool stuff I've built</a>
+        <a id="blog_link" href="/blog">Writing</a>
+        <a id="press_link" href="/press">Press</a>
         <div id="social">
-            <a href="https://github.com/" target='_blank'>github</a>
-            <a href="http://tumblr.com/" target='_blank'>blog</a>
-            <!-- <a href="/" target='_blank'>resume</a> -->
-            <a href="https://facebook.com/" target='_blank'>fb</a>
-            <a href="https://twitter.com/" target='_blank'>tw</a>
-            <a href="https://www.linkedin.com/in//" target='_blank'>ln</a>
+            <?php foreach ( scott_social_links() as $link ) : ?>
+                <a href="<?php echo esc_url( $link['url'] ); ?>" target="_blank" rel="noopener"><?php echo esc_html( $link['label'] ); ?></a>
+            <?php endforeach; ?>
         </div>
         <div id="peeps">
             <h5>Some of the cats I work with<br/>to make amazing things:</h5>
