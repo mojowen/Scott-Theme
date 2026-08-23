@@ -23,7 +23,9 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
     <title><?php echo srd_title(); ?></title>
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/stuff/icon.ico" />
+    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/stuff/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/stuff/favicons/favicon-32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/stuff/favicons/favicon-180.png">
   <?php wp_head(); ?>
   <?php open_graph_crap(); ?>
 </head>
