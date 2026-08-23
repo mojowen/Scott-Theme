@@ -42,10 +42,9 @@
         <a id="blog_link" href="/blog">Writing</a>
         <a id="press_link" href="/press">Press</a>
         <div id="social">
-            <a href="https://github.com/" target='_blank'>github</a>
-            <!-- <a href="/" target='_blank'>resume</a> -->
-            <a href="https://twitter.com/" target='_blank'>tw</a>
-            <a href="https://www.linkedin.com/in//" target='_blank'>ln</a>
+            <?php foreach ( scott_social_links() as $link ) : ?>
+                <a href="<?php echo esc_url( $link['url'] ); ?>" target="_blank" rel="noopener"><?php echo esc_html( $link['label'] ); ?></a>
+            <?php endforeach; ?>
         </div>
         <div id="peeps">
             <h5>Some of the cats I work with<br/>to make amazing things:</h5>

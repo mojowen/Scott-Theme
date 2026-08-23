@@ -1,5 +1,47 @@
 <?php
 
+// Social links are managed in Appearance -> Customize -> Social Links,
+// stored in the database so deploys of this repo never overwrite them.
+add_action( 'customize_register', 'scott_customize_register' );
+function scott_customize_register( $wp_customize ) {
+    $wp_customize->add_section( 'scott_social', array(
+        'title'    => __( 'Social Links' ),
+        'priority' => 30,
+    ) );
+
+    $socials = array(
+        'github'   => array( 'label' => 'GitHub URL',   'default' => '' ),
+        'twitter'  => array( 'label' => 'Twitter / X URL', 'default' => '' ),
+        'linkedin' => array( 'label' => 'LinkedIn URL', 'default' => '' ),
+        'mastodon' => array( 'label' => 'Mastodon URL', 'default' => '' ),
+        'bluesky'  => array( 'label' => 'Bluesky URL',  'default' => '' ),
+        'email'    => array( 'label' => 'Email address','default' => '' ),
+    );
+
+    foreach ( $socials as $id => $args ) {
+        $wp_customize->add_setting( "scott_social_{$id}", array(
+            'default'           => $args['default'],
+            'sanitize_callback' => $id === 'email' ? 'sanitize_email' : 'esc_url_raw',
+        ) );
+        $wp_customize->add_control( "scott_social_{$id}", array(
+            'label'   => $args['label'],
+            'section' => 'scott_social',
+            'type'    => 'url',
+        ) );
+    }
+}
+
+function scott_social_links() {
+    $links = array();
+    foreach ( array( 'github', 'twitter', 'linkedin', 'mastodon', 'bluesky' ) as $id ) {
+        $url = get_theme_mod( "scott_social_{$id}" );
+        if ( $url ) $links[] = array( 'url' => $url, 'label' => $id );
+    }
+    $email = get_theme_mod( 'scott_social_email' );
+    if ( $email ) $links[] = array( 'url' => 'mailto:' . $email, 'label' => 'email' );
+    return $links;
+}
+
 // Styles: plain CSS + Bitter from Google Fonts
 add_action( 'wp_enqueue_scripts', 'scott_styles' );
 function scott_styles() {
